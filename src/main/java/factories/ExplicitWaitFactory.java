@@ -11,6 +11,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.function.Function;
 
+/*
+Defines wait conditions that are used in common methods handling the web elements
+ */
+
 public class ExplicitWaitFactory {
     private ExplicitWaitFactory(){}
 
@@ -37,24 +41,7 @@ public class ExplicitWaitFactory {
     }
 
     public static void performExplicitWait(WaitStrategy waitStrategy, By by){
-//        switch(waitStrategy) {
-//            case WaitStrategy.CLICKABLE: {
-//                waitForCondition(by, ExpectedConditions.elementToBeClickable(by), 60);
-//            }
-//            case WaitStrategy.PRESENCE:{
-//                waitForCondition(by,ExpectedConditions.presenceOfElementLocated(by),60);
-//            }
-//            case WaitStrategy.VISIBLE:{
-//                waitForCondition(by,ExpectedConditions.visibilityOfElementLocated(by),60);
-//            }
-//            case WaitStrategy.INVISIBLE:{
-//                waitForCondition(by,ExpectedConditions.invisibilityOfElementLocated(by),60);
-//            }
-//            default:
-//                DriverFactory.getDriver().findElement(by);
-//        }
-        if (waitStrategy == WaitStrategy.CLICKABLE) {
-            waitForCondition(by,ExpectedConditions.elementToBeClickable(by), 60);}
+        if (waitStrategy == WaitStrategy.CLICKABLE) {waitForCondition(by,ExpectedConditions.elementToBeClickable(by), 60);}
         else if (waitStrategy == WaitStrategy.PRESENCE) {    waitForCondition(by,ExpectedConditions.presenceOfElementLocated(by), 60);}
         else if (waitStrategy == WaitStrategy.VISIBLE) {    waitForCondition(by,ExpectedConditions.visibilityOfElementLocated(by), 60);}
         else if (waitStrategy == WaitStrategy.INVISIBLE) {    waitForCondition(by,ExpectedConditions.invisibilityOfElementLocated(by), 60);}

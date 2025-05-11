@@ -12,6 +12,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+Manages the drivers including initializing of the driver based on the browser, launching the application and unloading the driver after test execution
+ */
+
 public class DriverFactory {
     @Getter
     private static WebDriver driver;

@@ -2,6 +2,9 @@ package pojo;
 
 import lombok.Getter;
 
+/*
+Users pojo class
+ */
 @Getter
 public class User {
     private String username;

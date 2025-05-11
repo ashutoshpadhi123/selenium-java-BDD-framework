@@ -12,9 +12,12 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+/*
+Hooks for before and after running a test
+ */
 
 public class Hooks {
-//    @Before
+//    @Before  ----- Not using it for now, will be used in a later time.
 //    public void setUp() {
 //        DriverFactory.initDriver();
 //        String baseUrl = ConfigReader.get("base.url");
