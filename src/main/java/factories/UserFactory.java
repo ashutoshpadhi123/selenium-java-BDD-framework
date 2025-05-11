@@ -3,6 +3,10 @@ package factories;
 import enums.Users;
 import pojo.User;
 
+/*
+Has the list of usernames and passwords used by different kinds of users
+ */
+
 public class UserFactory {
     public static User getUser(Users users) {
         switch (users) {

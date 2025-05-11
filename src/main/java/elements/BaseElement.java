@@ -9,6 +9,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+/*
+Implements the various methods in the WebElement interface
+ */
 
 public class BaseElement implements IWebElement {
     private String label;

@@ -3,7 +3,6 @@ package steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.HomePage;
-import pages.LoginPage;
 
 public class HomeSteps {
 

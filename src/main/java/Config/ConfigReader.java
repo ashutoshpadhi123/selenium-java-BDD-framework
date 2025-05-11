@@ -4,6 +4,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+/*
+ConfigReader class: This class is used to read the environment file to extract the URL and Env
+*/
+
 public class ConfigReader {
     private static Properties properties;
     private static String env;
