@@ -11,15 +11,18 @@ import org.testng.Assert;
 import pages.LoginPage;
 import pojo.User;
 
+import java.net.MalformedURLException;
+
 
 public class LoginSteps {
 
-    private LoginPage loginPage;
+    private final LoginPage loginPage;
+
+    public LoginSteps(){this.loginPage = new LoginPage();}
 
     @Given("user launches the application")
-    public void user_launches_the_application() {
+    public void user_launches_the_application() throws MalformedURLException {
         DriverFactory.launchApplication();
-        loginPage = new LoginPage();
     }
 
     @When("user logs in as {string}")
