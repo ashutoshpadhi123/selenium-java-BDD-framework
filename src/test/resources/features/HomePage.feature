@@ -1,3 +1,4 @@
+@Home
 Feature: Home page
 
   Scenario: User is able to view the product details after clicking on it
