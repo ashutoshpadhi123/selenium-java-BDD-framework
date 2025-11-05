@@ -31,4 +31,15 @@ public class ConfigReader {
         }
         return properties.getProperty(key);
     }
+
+    public static String getEndpoint(String key) {
+        Properties endpoints = new Properties();
+        try (FileInputStream file = new FileInputStream("src/test/resources/environment.properties")) {
+            endpoints.load(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Could not load environment.properties file");
+        }
+        return endpoints.getProperty(key);
+    }
 }
